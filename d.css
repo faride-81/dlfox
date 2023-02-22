@@ -115,25 +115,25 @@ a{
 .container1 p span{
     color: red;
 }
-.flex2{
+.flex1-1{
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     padding: 2rem 0;
     justify-content: center;
 }
-.flex2 .right{
+.flex1-1 .right{
     width: 20%;
     margin-left: 1rem;
 }
-.flex2 .left{
+.flex1-1 .left{
     direction: rtl;
     width: 45%;
     display: grid;
     gap: 1%;
     grid-template-columns: auto auto auto auto auto;
 }
-.flex2 .left a{
+.flex1-1 .left a{
     text-align: center;
     box-shadow: 2px 4px 2px #e4e0e0;
     color: black;
@@ -142,6 +142,9 @@ a{
     border-radius: 1rem;
 }
 /* slayder */
+.container3 img{
+    max-width: 100%;
+}
 .container3{
     width: 85%;
     margin: 0 auto;
@@ -152,14 +155,52 @@ a{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 0.5rem;
 }
 .container3 .img .img-3{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
     width: 100%;
 }
 .container3 .img .img-3 img{
     width: 100%;
+}
+.container4{
+    width: 85%;
+    margin: 0 auto;
+}
+.container4 .flex4{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container4 .flex4 .right{
+    width: 70%;
+}
+.container4 .flex4 .right .top{
+    border: #747171;
+}
+.container4 .flex4 .right .top .text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+.container4 .flex4 .right .top .text .text1{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5rem;
+}
+.container4 .flex4 .right .text .t{
+    
+}
+.container4 .flex4 .right .t p{}
+.container4 .flex4 .right .a{}
+.container4 .flex4 .right a{}
+.container4 .flex4 .right .top .icon{
+    width: 30%;
+}
+.container4 .flex4 .left{
+    width: 30%;
 }
 @media (max-width:970px) {
     .text{
@@ -168,17 +209,17 @@ a{
     }
 }
 @media (max-width:850px) {
-    .flex2{
+    .flex1-1{
         flex-direction: column;
         justify-content: center;
         direction: rtl;
     }
-    .flex2 .right{
+    .flex1-1 .right{
         width: 100%;
         margin-left: 0;
         margin-bottom: 1rem;
     }
-    .flex2 .left{
+    .flex1-1 .left{
         direction: rtl;
         width: 70%;
     }
@@ -250,8 +291,20 @@ a{
     .container1 p{
         font-size: 0.7rem;
     }
-    .flex2 .left{
+    .flex1-1 .left{
         width: 80%;
     }
-
+    .container3 .img{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        align-items: center;
+    }
+    .container3 .img .img-3{
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
 }
