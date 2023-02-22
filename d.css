@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "iranyekan" ;
+    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
+    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+}
+@font-face {
+    font-family: "iranyekan_numbers" ;
+    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
+    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+}
+body{
+    font-family: 'iranyekan_numbers','iranyekan';
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+}
+.container{
+    width: 90%;
+    margin:  0 auto;
+}
+.flex{
+    height: auto;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.svg{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    gap: 1%;
+    justify-content: start;
+}
+.svg a .s{
+    color: #b6abab ;
+}
+.svg a .s:hover{
+    color: black ;
+}
+.text{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 20% 15% 15%;
+    gap: 5%;
+    justify-content: end;
+}
+a{
+    text-decoration: none;
+}
+.text a .t{
+    color: #747171;
+    font-size: 0.7rem;
+}
+.text a .t:hover{
+    color: black;
+}
+.container1{
+    width: 80%;
+    margin: 0 auto;
+}
+.container1 .flex1{
+    border: solid 1px #747171;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container1 .flex1 .right{
+    width: 50%;
+    direction: rtl;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+    justify-content: start;
+    gap: 1px;
+}
+.flex1 .right a{
+    text-decoration: none;
+    color: black;
+}
+.flex1 .left{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex1 .left a{
+    width: 8%;
+    align-items: center;
+}
+.flex1 .left a img{
+    width: 100%;
+}
+.flex1 .left svg{
+    margin-left: 4rem;
+}
+.container1 p{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.91rem;
+    color: #747171;
+    border-bottom: #747171 1px dashed;
+}
+.container1 p a{
+    text-decoration: none;
+}
+.container1 p span{
+    color: red;
+}
+.flex2{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem 0;
+    justify-content: center;
+}
+.flex2 .right{
+    width: 20%;
+    margin-left: 1rem;
+}
+.flex2 .left{
+    direction: rtl;
+    width: 45%;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: auto auto auto auto auto;
+}
+.flex2 .left a{
+    text-align: center;
+    box-shadow: 2px 4px 2px #e4e0e0;
+    color: black;
+    font-size: 0.61rem;
+    border: #747171 solid 1px;
+    border-radius: 1rem;
+}
+/* slayder */
+.container3{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.container3 .img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container3 .img .img-3{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+}
+.container3 .img .img-3 img{
+    width: 100%;
+}
+@media (max-width:970px) {
+    .text{
+        grid-template-columns: 25% 20% 20%;
+        gap: 7%;        
+    }
+}
+@media (max-width:850px) {
+    .flex2{
+        flex-direction: column;
+        justify-content: center;
+        direction: rtl;
+    }
+    .flex2 .right{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .flex2 .left{
+        direction: rtl;
+        width: 70%;
+    }
+}
+@media (max-width:740px) {
+    .flex{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .svg{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 10% 10% 10% 10%;
+        gap: 5%;
+        justify-content: start;
+    }
+    .text{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .text a .t{
+        color: #b6abab;
+        font-size: 0.7rem;
+        direction: rtl;
+        line-height: 1.5rem;
+    }
+    /* تبدل منو ب منوی کوچک */
+    /* .container1 .flex1{
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container1 .flex1 .right{
+        width: 50%;
+        direction: rtl;
+        display: grid;
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+        justify-content: start;
+        gap: 1px;
+    }
+    .flex1 .right a{
+        text-decoration: none;
+        color: black;
+    }
+    .flex1 .left{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .flex1 .left a{
+        width: 8%;
+        align-items: center;
+    }
+    .flex1 .left a img{
+        width: 100%;
+    }
+    .flex1 .left svg{
+        margin-left: 4rem;
+    }
+    .container1 p{
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.91rem;
+    } */
+    .container1 p{
+        font-size: 0.7rem;
+    }
+    .flex2 .left{
+        width: 80%;
+    }
+
+}
