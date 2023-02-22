@@ -172,6 +172,7 @@ a{
 .container4 .flex4{
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 2rem;
 }
 .container4 .flex4 .right{
     width: 70%;
@@ -181,23 +182,21 @@ a{
     border-radius: 0.71rem;
     margin-top: 3rem;
     text-align: -webkit-right;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.5rem;
 }
 .container4 .flex4 .right .top .text{
     width: 70%;
     display: flex;
     flex-direction: column;
     direction: rtl;
-    padding: 2rem;
 }
 .container4 .flex4 .right .top .text .text1{
     display: flex;
     flex-direction: row;
     font-size: 0.75rem;
-}
-.container4 .flex4 .right .text .t{
-    
-}
-.container4 .flex4 .right .t p{}
+}    
 .container4 .flex4 .right .a{
     background-color: rgb(252, 185, 99);
     color: rgb(253, 120, 72);
@@ -211,9 +210,55 @@ a{
 }
 .container4 .flex4 .right .top .icon{
     width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    color: red;
+}
+.container4 .flex4 .right .top .icon .number{
+    margin-left: 0.61rem;
 }
 .container4 .flex4 .left{
     width: 20%;
+}
+.container4 .bottom .card{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container4 .bottom .card .img{
+    width: 30%;
+}
+.container4 .bottom .card img{
+    width: 100%;
+}
+.container4 .bottom .card .text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.container4 .bottom .card .text .row2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container4 .bottom .card .text .row2 .col1{
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.container4 .bottom .card .text .row2 .col1 .icon{
+    width: 80%;
+    margin: 0% auto;
+}
+.container4 .bottom .card .text .row2 .col1 svg{
+    width: 100%;
+}
+.container4 .bottom .card .text .row2 .col2{
+    width: 50%;
+    text-align: end;
+}
+.container4 .bottom .card .text .row2 table td{
+    padding: 0.2rem 0.5rem; 
+    font-size: 0.71rem;
 }
 @media (max-width:970px) {
     .text{
