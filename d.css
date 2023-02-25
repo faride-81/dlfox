@@ -461,9 +461,121 @@ img{
 text-decoration: none;
 color: black;
 }
-.flex2{
+.left .flex2{
+   box-shadow: 26px -27px 37px #e7e7e7;    margin: 2rem auto;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.left .flex2 .container2{
     width: 90%;
     margin: 2rem auto;
+}
+.left .flex2 .container2 .text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;margin-bottom: 2rem;
+}
+.left .flex2 .container2 .text p{
+    width: 40%;
+    text-align: starts;
+    font-size: 0.6rem;
+    color: #747171;
+}
+.left .flex2 .container2 .text b{
+    text-align: end;
+    width: 60%;
+    font-weight: bolder;
+    font-size: 0.75rem;
+}
+.left .flex2 .container2 .a{
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: auto  auto auto auto;
+}
+.left .flex2 .container2 a{
+    text-align: center;
+    text-decoration: none;
+    color: #747171;
+}
+.left .flex2 .container2 a:active{
+    background: linear-gradient(-90deg,#3ce2c1,#236fef,#7251b5);    border-radius: 0.5rem;
+    padding: 0.2rem 0rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+.left .flex2 .container2 a:hover{
+    background: linear-gradient(-90deg,#3ce2c1,#236fef,#7251b5);    color: white;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0rem;
+    color: white;
+}
+.left .flex2 .container2 .card{
+    padding: 1rem 0;
+    border-top: #a5a0a0 solid 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.left .flex2 .container2 .card .right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: 30%;
+    align-items: center;
+}
+.left .flex2 .container2 .card .right img{
+    width: 100%;
+}
+.left .flex2 .container2 .card .right .new{
+    background-color: #ff0043;
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 0.65rem;
+    padding: 0.15rem 0.5rem;
+}
+.left .flex2 .container2 .card .left{
+    width: 60%;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+
+}
+.left .flex2 .container2 .card .left a{
+    font-size: 0.9rem;
+    text-align: start;
+    font-weight: bolder;
+    color: black;
+}
+.left .flex2 .container2 .card .left p{
+    font-size: 0.6rem;
+}
+.left .flex2 .hover{
+    height: 600px;
+    width: 100%;
+}
+.left .flex2 .hover .img1{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(60, 62, 63, 0.8), rgba(0, 0, 0, 0.60)), url('./left8.jpg');
+}
+.left .flex2 .hover .img1 .p1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.left .flex2 .img1 .p1 .text{
+    width: 80%;
+    color: white;
+}
+.left .flex2 .img1 .p1 .icon{
+    width: 10%;
+    color: white;
 }
 /* .container-f{
     width: 10%;
