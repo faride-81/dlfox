@@ -556,25 +556,40 @@ color: black;
     height: 600px;
     width: 100%;
 }
-.left .flex2 .hover .img1{
+.left .flex2 .hover a{
     height: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(60, 62, 63, 0.8), rgba(0, 0, 0, 0.60)), url('./left8.jpg');
+    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left8.jpg');   
 }
-.left .flex2 .hover .img1 .p1{
+.left .flex2 .hover a .img1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.left .flex2 .hover a .img1 .p1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
-.left .flex2 .img1 .p1 .text{
-    width: 80%;
+.left .flex2 .hover a .img1 .p1 .text{
+    width: 90%;
+    font-size: 0.6rem;
+    color: white;
+    font-weight: bolder;
+    direction: rtl;
+}
+.left .flex2 .hover a .img1 .icon{
     color: white;
 }
-.left .flex2 .img1 .p1 .icon{
-    width: 10%;
+.left .flex2 .hover a .img1 .p2{
+    font-size: 0.6rem;
+    color: white;
+}
+.left .flex2 .hover a .img1 .p3{
+    font-size: 0.5rem;
     color: white;
 }
 /* .container-f{
@@ -591,10 +606,6 @@ color: black;
     max-width: 100%;
     height: 15vh;
 } */
-.box{
-    background-color: white;
-    box-shadow: #5d5b5b 2px 2px 21px;
-}
 .rayane .top .right svg{
     color: #2374ef;
 }
@@ -624,8 +635,9 @@ color: black;
     width: 60%;
 }
 .footer{
+    box-shadow: #5d5b5b 2px 2px 21px;
     padding: 1rem 0;
-    background-image: linear-gradient(to bottom, rgba(193, 195, 197, 0.8), rgba(224, 214, 214, 0.6)), url('./paeen.png');   
+    background-image: linear-gradient(to bottom, rgba(247, 251, 255, 0.8), rgba(248, 240, 240, 0.767)), url('./paeen.png');   
     width: 100%; 
 }
 footer{
@@ -681,10 +693,44 @@ footer{
     flex-direction: column;
 }
 .footer .copy{
+    align-items: flex-start;
     width: 60%;
-    margin: 0 auto;
+    margin: 2rem 6rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer .copy .img{
+    margin: 0 1rem;
+    width: 20%;
+    color: rgb(240, 106, 11);
+}
+.footer .copy img{
+    width: 100%;
+}
+.footer .copy .text{
+    width: 70%;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer .copy .text .top{
+    margin-bottom: 2rem;
+    direction: rtl;
+}
+.footer .copy .text .bottom{
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    font-size: 0.5rem;
+}
+.footer .copy .text .bottom .right{
+    width: 50%;
+    text-align: center;
+}
+.footer .copy .text .bottom .left{
+    width: 40%;
+    text-align: center;
+    border-left: black 1px solid;
 }
 @media (max-width:970px) {
     .text{
