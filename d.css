@@ -47,7 +47,7 @@ body{
 .svg a .s:hover{
     color: black ;
 }
-.text{
+.container .flex .text{
     width: 50%;
     display: grid;
     grid-template-columns: 20% 15% 15%;
@@ -555,18 +555,30 @@ color: black;
 .left .flex2 .hover{
     height: 600px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.left .flex2 .hover a{
+.left .flex2 .hover .bac{
     height: 100px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left8.jpg');   
 }
+.left .flex2 .hover a{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+.left .flex2 .hover a .number{
+    width: 30%;
+    font-size: 3rem;
+    color: white;
+}       
 .left .flex2 .hover a .img1{
     display: flex;
+    line-height: 1.8rem;
     flex-direction: column;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 .left .flex2 .hover a .img1 .p1{
@@ -576,21 +588,51 @@ color: black;
 }
 .left .flex2 .hover a .img1 .p1 .text{
     width: 90%;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     color: white;
     font-weight: bolder;
     direction: rtl;
 }
 .left .flex2 .hover a .img1 .icon{
     color: white;
+    width: 10%;
+}
+.left .flex2 .hover a .img1 .icon svg{
+    width: 100%;
 }
 .left .flex2 .hover a .img1 .p2{
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     color: white;
+    font-weight: bolder;
+    direction: rtl;
 }
 .left .flex2 .hover a .img1 .p3{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: white;
+    direction: rtl;
+}
+.left .flex2 .hover .bac2{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left9.jpg');   
+}
+.left .flex2 .hover .bac3{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left10.jpg');   
+}
+.left .flex2 .hover .bac4{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left11.jpg');   
+}
+.left .flex2 .hover .bac5{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left12.jpg');   
+}
+.left .flex2 .hover .bac5 :hover{
+    background-color: #236fef;
 }
 /* .container-f{
     width: 10%;
