@@ -142,6 +142,17 @@ a{
     border-radius: 1rem;
 }
 /* slayder */
+#slideshow #slidesContainer .slide {
+
+    margin:0 auto;
+    
+    width:540px; /* reduce by 20 pixels to avoid horizontal scroll */
+    
+    height:263px;
+    
+    }
+    
+    /* slayder */
 .container3 img{
     max-width: 100%;
 }
@@ -469,7 +480,7 @@ color: black;
 }
 .left .flex2 .container2{
     width: 90%;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 .left .flex2 .container2 .text{
     display: flex;
@@ -552,88 +563,30 @@ color: black;
 .left .flex2 .container2 .card .left p{
     font-size: 0.6rem;
 }
-.left .flex2 .hover{
-    height: 600px;
-    width: 100%;
+.left .hover{
     display: flex;
     flex-direction: column;
 }
-.left .flex2 .hover .bac{
-    height: 100px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left8.jpg');   
+.left .hover .bacground{
+
 }
-.left .flex2 .hover a{
+.left .hover .bacground .img{
+    position: relative;
+    min-height: 100px;
+}
+.left .hover .bacground .position{
+    position: absolute;
+}
+.left .hover .bacground .text{
     display: flex;
     flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
+    font-size: 0.5rem;
 }
-.left .flex2 .hover a .number{
-    width: 30%;
-    font-size: 3rem;
-    color: white;
-}       
-.left .flex2 .hover a .img1{
-    display: flex;
-    line-height: 1.8rem;
-    flex-direction: column;
-    width: 70%;
-    margin: 0 auto;
-}
-.left .flex2 .hover a .img1 .p1{
+.left .hover .bacground .text .right .flex{
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
-.left .flex2 .hover a .img1 .p1 .text{
-    width: 90%;
-    font-size: 0.65rem;
-    color: white;
-    font-weight: bolder;
-    direction: rtl;
-}
-.left .flex2 .hover a .img1 .icon{
-    color: white;
-    width: 10%;
-}
-.left .flex2 .hover a .img1 .icon svg{
-    width: 100%;
-}
-.left .flex2 .hover a .img1 .p2{
-    font-size: 0.65rem;
-    color: white;
-    font-weight: bolder;
-    direction: rtl;
-}
-.left .flex2 .hover a .img1 .p3{
-    font-size: 0.6rem;
-    color: white;
-    direction: rtl;
-}
-.left .flex2 .hover .bac2{
-    height: 100px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left9.jpg');   
-}
-.left .flex2 .hover .bac3{
-    height: 100px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left10.jpg');   
-}
-.left .flex2 .hover .bac4{
-    height: 100px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left11.jpg');   
-}
-.left .flex2 .hover .bac5{
-    height: 100px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(64, 66, 68, 0.8), rgba(248, 240, 240, 0.767)), url('./left12.jpg');   
-}
-.left .flex2 .hover .bac5 :hover{
-    background-color: #236fef;
-}
+.left .hover .bacground .text
 /* .container-f{
     width: 10%;
     margin: 0 auto;
