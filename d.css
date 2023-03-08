@@ -69,39 +69,68 @@ a{
     margin: 0 auto;
 }
 .container1 .flex1{
-    border: solid 1px #747171;
+    width: 100%;
     padding: 2rem 0;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .container1 .flex1 .right{
     width: 50%;
     direction: rtl;
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
-    justify-content: start;
-    gap: 1px;
+    gap: 5%;
+    grid-template-columns: auto auto auto auto auto auto auto;
 }
-.flex1 .right a{
-    text-decoration: none;
-    color: black;
-}
-.flex1 .left{
-    width: 50%;
+.container1 .flex1 .right .container {
+    perspective: 600px;
+    width: 50px;
+    height: 50px;
+    
+  }
+  .container1 .flex1 .right .container svg{
+    color: #2fc4d2;
+  }
+  .cube {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+  
+  }
+  .cube:hover {
+    transform: rotateX(180deg);
+  }
+  
+  .cube__face {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size : 1rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: rgb(24, 192, 243);
+  }
+  
+  
+  .cube__face--front { background-color: white;}
+  .cube__face--back { background-color: white;}
+  
+  
+  .cube__face--front { transform: rotateX(0deg) translateZ(100px); }
+  .cube__face--back { transform: rotateX(180deg) translateZ(100px); }
+  .container1 .flex1 .left{
+    width: 30%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-.flex1 .left a{
-    width: 8%;
-    align-items: center;
-}
-.flex1 .left a img{
+  }
+  .container1 .flex1 .right a{
+    width: 50%;
+  }
+  .container1 .flex1 .right img{
     width: 100%;
-}
-.flex1 .left svg{
-    margin-left: 4rem;
-}
+  }
 .container1 p{
     padding: 1rem 0;
     text-align: center;
