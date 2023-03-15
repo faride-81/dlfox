@@ -183,7 +183,6 @@ border-radius: 1rem;
     grid-template-columns: auto  auto auto auto auto;
     position: relative;
 }
-
 .container2 .text{
     position: absolute;
     color: rebeccapurple;
@@ -614,9 +613,6 @@ font-size: 0.6rem;
 .left .hover{
 display: flex;
 flex-direction: column;
-}
-.left .hover .bacground{
-
 }
 .left .hover .bacground .img{
 position: relative;

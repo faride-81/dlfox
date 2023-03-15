@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+link{
+    display: block;
+}
+body{
+    background-color: aqua;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+}
+.container{
+    width: 90%;
+    margin:  0 auto;
+}
+.flex{
+    height: auto;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.svg{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    gap: 1%;
+    justify-content: start;
+}
+.svg a .s{
+    color: #b6abab ;
+}
+.svg a .s:hover{
+    color: black ;
+}
+.container .flex .text{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 20% 15% 15%;
+    gap: 5%;
+    justify-content: end;
+}
+a{
+    text-decoration: none;
+}
+.text a .t{
+    color: #747171;
+    font-size: 0.7rem;
+}
+.text a .t:hover{
+    color: black;
+}
