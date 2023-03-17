@@ -223,19 +223,169 @@ a{
     flex-direction: column;
 }
 .container3 .image{
-    width: 100%;
+    max-width: 100%;
 }
 .container3 .image img{
-    width: 100%;
+    max-width: 100%;
 }
 .container3 .img{
     max-width: 100%;
     direction: rtl;
     display: grid;
-    grid-template-columns: auto auto auto;
+    gap: 4%;
+    grid-template-columns: 30% 30% 30%;
 }
-.container3 .img img{
-    max-width: 100%;
+.container3 .img .img1{
+    width: 30%;
+    position: relative;
+}
+.container3 .img .img1 .imgg {
+    width: 100%;
+}
+.container3 .img .img1 .imggg{
+    width: 100%;
+}
+.container3 .img .img1 .imggg {
+    width: 100%;
+}
+.container3 .img .img1 img{
+    min-width: 100%;
+}
+.container3 .img .img1 .bac{
+    position: absolute;
+    background-color: #747171;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.5;
+    display: none;
+}
+.container3 .img .img1:hover .bac{
+    display: block;
+}
+.container3 .img .img1 .text{
+    position: absolute;
+    color: white;
+    top: 1rem;
+    right: 1rem;
+    line-height: 3rem;
+    font-weight: bolder;
+    display: none;
+}
+.container3 .img .img1:hover .text{
+    display: block;
+}
+.container3 .img .img1 .text .flex33{
+    display: flex;
+    flex-direction: row;
+    direction: ltr;
+}
+.container3 .img .img1 .text .flex33 .icon{
+    color: #e13b5f;
+    width: 20%;
+    padding: 0.3rem 0;
+}
+.container3 .img .img1 .text .flex33 .text3{
+    font-size: 1.5rem;
+    color: white;
+}
+/* footer */
+.footer{
+box-shadow: #5d5b5b 2px 2px 21px;
+padding: 1rem 0;
+background-image: linear-gradient(to bottom, rgba(247, 251, 255, 0.8), rgba(248, 240, 240, 0.767)), url('./footer.png');   
+width: 100%; 
+}
+footer{
+width: 90%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 24% 24% 24% 24%;
+direction: rtl;
+}
+.rayane{
+display: flex;
+flex-direction: column;
+}
+.narmafzar{
+display: flex;
+flex-direction: column;
+}
+.majale{
+display: flex;
+flex-direction: column;
+}
+.footer .top{
+margin-bottom: 2rem;
+display: flex;
+flex-direction: row;
+}
+.footer .top .right{
+width: 20%;
+}
+.footer .top .left p{
+font-size: 0.75rem;
+}
+.footer .top .left b{
+font-size: 1.1rem;
+font-weight: bolder;
+}
+.footer .bottom{
+line-height: 1.8rem;
+display: flex;
+flex-direction: column;
+}
+.footer .bottom a{
+text-decoration: none;
+color: #5d5b5b;
+font-size: 0.76rem;
+}
+.footer .bottom a:hover{
+color: black;
+}
+.ghaadam{
+display: flex;
+flex-direction: column;
+}
+.footer .copy{
+align-items: flex-start;
+width: 60%;
+margin: 2rem 6rem;
+display: flex;
+flex-direction: row-reverse;
+}
+.footer .copy .img{
+margin: 0 1rem;
+width: 20%;
+color: rgb(240, 106, 11);
+}
+.footer .copy img{
+width: 100%;
+}
+.footer .copy .text{
+width: 70%;
+font-size: 0.6rem;
+display: flex;
+flex-direction: column;
+}
+.footer .copy .text .top{
+margin-bottom: 2rem;
+direction: rtl;
+}
+.footer .copy .text .bottom{
+display: flex;
+flex-direction: row;
+justify-content: end;
+font-size: 0.5rem;
+}
+.footer .copy .text .bottom .right{
+width: 50%;
+text-align: center;
+}
+.footer .copy .text .bottom .left{
+width: 40%;
+text-align: center;
+border-left: black 1px solid;
 }
 @media(max-width: 860px) {
     .container .flex .svg{
