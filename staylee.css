@@ -320,7 +320,7 @@ a {
     padding: 1.5rem;
 }
 .container5 .flex5 .right5 .top .text {
-    width: 70%;
+    width: 80%;
     padding-right: 3rem;
     display: flex;
     flex-direction: column;
@@ -330,21 +330,28 @@ a {
     display: flex;
     flex-direction: row;
     font-size: 0.75rem;
+    width: 100%;
 }    
+.container5 .flex5 .right5 .t{
+    width: 70%;
+}
 .container5 .flex5 .right5 .a {
+    
+    
+    margin-right: 1rem;
+    width: 30%;
+}
+.container5 .flex5 .right5 .top a {
+    text-decoration: none;
+    border-radius: 1rem;
     background-color: rgb(252, 185, 99);
     color: rgb(253, 120, 72);
-    border-radius: 1rem;
-    margin-right: 1rem;
-}
-.container5 .flex5 .right5 a {
-    text-decoration: none;
     font-weight: bolder;
     font-size: 0.81rem;
     padding: 0 0.5rem;
 }
 .container5 .flex5 .right5 .top .icon {
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -363,11 +370,107 @@ a {
 .container5 .flex5 .bottom .card {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.container5 .flex5 .card .img{
+    width: 20%;
+}
+.container5 .flex5 .card .img img{
+    width: 100%;
+}
+.container5 .flex5 .card .text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.container5 .flex5 .card .text .row1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container5 .flex5 .card .row1 .update{
+    background-color: #ff0043;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+}
+.container5 .flex5 .card .row1 a{
+    text-decoration: none;
+    color: black;
+}
+.container5 .flex5 .card .row2{
+    margin: 2rem 0;
+    align-items: center;
+    direction: rtl;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: auto auto auto;
+    font-size: 0.8rem;
+}
+.container5 .flex5 .card .row2 .col2{
+    direction: ltr;
+    text-align: end;
+    border-right: solid 1px #c3bfbf;
+}
+.container5 .flex5 .card .row2 .col3{
+    direction: ltr;
+    border-right: solid 1px #c3bfbf;
+    text-align: end;
+}
+.container5 .flex5 .card .row3{
+    direction: rtl;
+    font-size: 0.8rem;
+}
+.container5 .flex5 .card .row4{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2rem 0;
+    font-size: 0.7rem;
+}
+.container5 .flex5 .card .row4 .right{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: start;
+    direction: rtl;
+    color: black;
+    border: 1px solid transparent;
+}
+.container5 .flex5 .card .row4 .right a {
+    color: black;
+}
+.container5 .flex5 .card .row4 .right a:hover {
+    color: blue;
+}
+.container5 .flex5 .card .row4 .right .textt{
+    width: 70%;
+}
+.container5 .flex5 .card .row4 .left{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    direction: rtl;
+    color: #728347;
+    align-items: center;
+    background-color: #c8db99;
+    border-radius: 0.1rem;
+    padding: 0.2rem 0.5rem;
+}
+.container5 .flex5 .card .row4 .left a{
+    color: #728347;
+}
+.container5 .flex5 .card .row4 .left a:hover{
+    color: black;
+}
+.container5 .flex5 .card .row4 .left .text{
+    width: 85%;
+}
+.container5 .flex5 .card .row4 .left .icon{
+    width: 15%;
 }
 .line {
     align-items: center;
     display: flex;
     flex-direction: row;
+    margin-bottom: 1.5rem;
 }
 .line .hr {
     width: 25%;
@@ -411,6 +514,11 @@ a {
     color: white;
     font-size: 1rem;
 }    
+/*lefy*/
+.container5 .flex5 .left5{
+    width: 30%;
+}
+ 
  /* footer */
 .footer {
     box-shadow: #5d5b5b 2px 2px 21px;
@@ -427,34 +535,34 @@ footer {
     grid-template-columns: 24% 24% 24% 24%;
     direction: rtl;
 }
-.rayane {
+footer .rayane {
     display: flex;
     flex-direction: column;
 }
-.rayane .top {
+footer .rayane .top {
     color: #2374ef;
 }
-.rayane .top svg {
+footer .rayane .top svg {
     color: #2374ef;
 }
-.narmafzar {
+footer .narmafzar {
     display: flex;
     flex-direction: column;
 }
-.narmafzar .top {
+footer .narmafzar .top {
     color: #ff0043;
 }
-.narmafzar .top svg {
+footer .narmafzar .top svg {
     color: #ff0043;
 }
-.majale {
+footer .majale {
     display: flex;
     flex-direction: column;
 }
-.majale .top {
+footer .majale .top {
     color: #2fc4d2;
 }
-.majale .top svg {
+footer .majale .top svg {
     color: #2fc4d2;
 }
 .footer .top {
@@ -485,14 +593,14 @@ footer {
 .footer .bottom a:hover {
     color: black;
 }
-.ghadam {
+footer .ghadam {
     display: flex;
     flex-direction: column;
 }
-.ghadam .top svg {
+footer .ghadam .top svg {
     color: #747171;
 }
-.footer .copy {
+footer .footer .copy {
     align-items: flex-start;
     width: 60%;
     margin: 2rem 6rem;
@@ -531,6 +639,20 @@ footer {
     width: 40%;
     text-align: center;
     border-left: black 1px solid;
+}
+@media(max-width: 980px) {
+    .container5{
+        width: 99%;
+        margin: 0 auto;
+    }
+    .container5 .flex5 .right5 .top .text .text1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+    }    
+    .container5 .flex5 .right5 .top .text .text1 .t{
+        width: 100%;
+    }
 }
 @media(max-width: 940px) {
     .container .flex .svg {
@@ -609,6 +731,15 @@ footer {
     }
     .footer .top {
         margin-top: 1rem;
+    }
+}
+@media(max-width: 780px) {
+    .container5 .flex5 .right5 {
+        width: 99%;
+        margin: 0 auto;
+    }
+    .container5 .flex5{
+        flex-direction: column;
     }
 }
 @media(max-width: 666px) {
