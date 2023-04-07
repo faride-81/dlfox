@@ -332,12 +332,10 @@ a {
     font-size: 0.75rem;
     width: 100%;
 }    
-.container5 .flex5 .right5 .t{
+.container5 .flex5 .right5 .top .text .text1 .t{
     width: 70%;
 }
 .container5 .flex5 .right5 .a {
-    
-    
     margin-right: 1rem;
     width: 30%;
 }
@@ -473,13 +471,14 @@ a {
     margin-bottom: 1.5rem;
 }
 .line .hr {
-    width: 25%;
+    width: 15%;
     border-bottom: #747171 1px solid;
 }
 .line .text {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row-reverse;
+    text-align: center;
 }
 .line .text .t {
     width: 90%;
@@ -516,9 +515,86 @@ a {
 }    
 /*lefy*/
 .container5 .flex5 .left5{
-    width: 30%;
+    width: 25%;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} .container5 .flex5 .left5 a img{
+    width: 100%;
 }
- 
+.container5 .flex5 .left5 .MAGAZINE{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.container5 .flex5 .left5 .MAGAZINE h6{
+    color: #747171;
+}
+.container5 .flex5 .left5 .active{
+    width: 99%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: auto auto auto;
+}
+.container5 .flex5 .left5 .active2{
+    margin: 2rem auto;
+    color: black;
+    text-align: center;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: auto auto auto auto;
+} 
+.container5 .flex5 .left5 .active2 a{
+    color: black;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+.container5 .flex5 .left5 .active2 a:active{
+    background: linear-gradient(-90deg,#3ce2c1,#236fef,#7251b5);
+}
+.container5 .flex5 .left5 .card{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: solid 1px #585555c9;
+    border-top: solid 1px #585555c9;
+    padding: 1.5rem 0;
+}
+.container5 .flex5 .left5 .card .right{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container5 .flex5 .left5 .card .right .new{
+    background-color: red;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+.container5 .flex5 .left5 .card .right .img{
+    width: 100%;
+}
+.container5 .flex5 .left5 .card .right img{
+    width: 100%;
+}
+.container5 .flex5 .left5 .card .left{
+    width: 65%;
+    line-height: 1.5rem;
+    text-align: end;
+}
+.container5 .flex5 .left5 .card .left p{
+    font-size: 0.7rem;
+}
+.container5 .flex5 .left5 .card .left a{
+    color: black;
+}
+.container5 .flex5 .left5 .card .left a:hover{
+    color: blue;
+}
  /* footer */
 .footer {
     box-shadow: #5d5b5b 2px 2px 21px;
@@ -740,6 +816,9 @@ footer .footer .copy {
     }
     .container5 .flex5{
         flex-direction: column;
+    }
+    .container5 .flex5 .left5{
+        width: 100%;
     }
 }
 @media(max-width: 666px) {
