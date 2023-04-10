@@ -420,16 +420,18 @@ a {
 .container5 .flex5 .card .row4{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     margin: 2rem 0;
     font-size: 0.7rem;
 }
 .container5 .flex5 .card .row4 .right{
     display: flex;
     flex-direction: row;
-    width: 30%;
+    width: 12%;
     align-items: start;
     direction: rtl;
     color: black;
+    margin-left: 1rem;
     border: 1px solid transparent;
 }
 .container5 .flex5 .card .row4 .right a {
@@ -440,11 +442,12 @@ a {
 }
 .container5 .flex5 .card .row4 .right .textt{
     width: 70%;
+    padding: 0.15rem;
 }
 .container5 .flex5 .card .row4 .left{
     display: flex;
     flex-direction: row;
-    width: 30%;
+    width: 20%;
     direction: rtl;
     color: #728347;
     align-items: center;
@@ -580,7 +583,7 @@ a {
 }
 .container5 .flex5 .left5 .hover .right {
     position: relative;
-    width: 50%;
+    width: 50%; 
     color: #5d5b5b;
     text-align: end;
 }
@@ -589,6 +592,7 @@ a {
     top: 0;
     background-color: white;
     display: none;
+    width: 100%;
 }
 .container5 .flex5 .left5 .hover a:hover .aa {
     display: block;
@@ -789,20 +793,11 @@ footer .footer .copy {
     text-align: center;
     border-left: black 1px solid;
 }
-.fix{
-    width: 30%;
-    margin: 0 auto;
-}
-.fix .img{
-    position: fixed;
-    bottom: 0px;
-    left: 8px;
-}
 @media(max-width: 1300px){
     .container5 .flex5 .left5 .MAGAZINE{
         flex-direction: column;
         margin: 2rem auto;
-        width: 90%;
+        width: 90%;  
         text-align: center;
     }
 }
@@ -909,6 +904,20 @@ footer .footer .copy {
     }
     .container5 .flex5 .left5{
         width: 100%;
+    }
+    .container5 .flex5 .left5 .MAGAZINE {
+        flex-direction: row-reverse;
+    }
+    .container5 .flex5 .left5 .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container5 .flex5 .left5 .card .right{
+        width: 15%;
+    }
+    .container5 .flex5 .left5 .card .left{
+        text-align: center;
     }
 }
 @media(max-width: 666px) {
