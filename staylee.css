@@ -672,6 +672,89 @@ a {
 .container5 .flex5 .left5 .card .left a:hover{
     color: blue;
 }
+.container5 .flex5 .left5 .img {
+    width: 100%;
+    position: relative;
+}
+.container5 .flex5 .left5 .img img{
+    width: 100%;
+}
+.container5 .flex5 .left5 .img .bacc{
+    background-color: #5d5b5b;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.75;
+    position: absolute;
+    top: -0.2rem;
+}
+.container5 .flex5 .left5 .img .left{
+    position: absolute;
+    color: white;
+    font-size: 8rem;
+    top: 4rem;
+}
+.container5 .flex5 .left5 .img .right {
+    color: white;
+    position: absolute;
+    top: 3rem;
+    direction: rtl;
+    width: 90%;
+    line-height: 1.5rem;
+}
+.container5 .flex5 .left5 .img .bac{
+    background-color: #236fef;
+    position: absolute;
+    display: none;
+    top: 0rem;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.35;
+}
+.container5 .flex5 .left5 .img:hover .bac{
+    display: block;
+}
+/* 2 */
+.container5 .flex5 .left5 .imgg {
+    width: 100%;
+    position: relative;
+}
+.container5 .flex5 .left5 .imgg img{
+    width: 100%;
+}
+.container5 .flex5 .left5 .bacc{
+    background-color: #5d5b5b;
+    width: 100%;
+    height: 20vh;
+    opacity: 0.75;
+    position: absolute;
+    top: -0.2rem;
+}
+.container5 .flex5 .left5 .imgg .left{
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    top: 2rem;
+}
+.container5 .flex5 .left5 .imgg .right {
+    color: white;
+    position: absolute;
+    top: 3rem;
+    direction: rtl;
+    width: 90%;
+    line-height: 1.5rem;
+}
+.container5 .flex5 .left5 .imgg .bac{
+    background-color: #236fef;
+    position: absolute;
+    display: none;
+    top: 0rem;
+    width: 100%;
+    height: 25vh;
+    opacity: 0.35;
+}
+.container5 .flex5 .left5 .imgg:hover .bac{
+    display: block;
+}
  /* footer */
 .footer {
     box-shadow: #5d5b5b 2px 2px 21px;
@@ -825,11 +908,13 @@ footer .footer .copy {
     /*  */
     .container1 .flex1 {
         padding: 1rem 0;
-        flex-direction: column-reverse;
+        flex-direction: column;
         direction: rtl;
+        box-shadow: none;
     }
     .container1 .flex1 .right {
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         margin-right: 0rem;
         margin-top: 1rem;
         direction: rtl;
@@ -842,6 +927,7 @@ footer .footer .copy {
     .container1 .flex1 .left {
         width: 50%;
         gap: 3%;
+        margin: 1.5rem auto;
     }
     .container1 .flex1 .left a {
         margin-right: 2rem;
